@@ -2,5 +2,7 @@ package domainplugin
 
 class OrgController {
 
-    def index() { }
+    def index() {
+		render "aaa"
+	}
 }
