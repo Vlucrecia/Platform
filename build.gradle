@@ -24,7 +24,7 @@ project(':WorkflowPlugin'){
     dependencies {
        compile project(':DomainPlugin')
     }
-}
+}  
 
 uploadArchives {
     repositories.mavenDeployer {
