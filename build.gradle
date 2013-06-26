@@ -28,7 +28,7 @@ project(':WorkflowPlugin'){
 
 uploadArchives {
     repositories.mavenDeployer {
-	  repository(url: "http://localhost:8085/nexus/content/repositories/test/xms") {
+	  repository(url: "http://localhost:8081/nexus/content/repositories/test/xms") {
 	uniqueVersion = false
             authentication(userName: "admin", password: "admin123")
         }
