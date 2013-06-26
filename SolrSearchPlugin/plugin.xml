@@ -1,0 +1,14 @@
+<plugin name='solr-search-plugin' version='0.1' grailsVersion='2.2 &gt; *'>
+  <author>Your name</author>
+  <title>Solr Search Plugin Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/solr-search-plugin</documentation>
+  <type>SolrSearchPluginGrailsPlugin</type>
+  <resources />
+  <repositories />
+  <dependencies />
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>

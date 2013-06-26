@@ -1,0 +1,40 @@
+buildscript{
+	repositories{
+		mavenCentral()
+		mavenRepo url: "http://repo.grails.org/grails/repo"
+		mavenRepo url: "http://localhost:8081/nexus/content/repositories/test/xms"
+		}
+	dependencies{
+		classpath "org.grails:grails-gradle-plugin:2.0.0-SNAPSHOT"//,
+		}
+	}
+apply plugin: 'grails'
+
+version = '2.2-SNAPSHOT'
+repositories {
+	mavenCentral()
+	mavenRepo url: "http://repo.grails.org/grails/repo"
+	mavenRepo url: "http://download.java.net/maven/2/"
+	}
+grails{
+grailsVersion "2.2.2"
+}
+    dependencies {
+    	compile "org.grails:grails-plugin-tomcat:2.2.2"
+	compile  project(':DomainPlugin')
+    }
+
+"grails-package-plugin" {
+    if (project.hasProperty("args")) {
+        args = "--binary"
+    }
+}     
+
+
+jar{  
+def zipFile = file("target/grails-plugin-workflow-plugin-0.1.jar")
+def outputDir = file("${buildDir}/unpacked/dist")
+from zipTree(zipFile)
+}
+
+

@@ -1,0 +1,38 @@
+allprojects {
+    apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'base'
+
+
+}
+configurations{
+pom
+}
+subprojects {
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        compile "javax.servlet:servlet-api:2.5"
+    }
+
+
+
+
+project(':WorkflowPlugin'){
+    dependencies {
+       compile project(':DomainPlugin')
+    }
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+	  repository(url: "http://localhost:8085/nexus/content/repositories/test/xms") {
+	uniqueVersion = false
+            authentication(userName: "admin", password: "admin123")
+        }
+
+}
+}
+}

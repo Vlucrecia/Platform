@@ -1,0 +1,16 @@
+<plugin name='workflow-plugin' version='0.1' grailsVersion='2.2 &gt; *'>
+  <author>Your name</author>
+  <title>Workflow Plugin Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/workflow-plugin</documentation>
+  <type>WorkflowPluginGrailsPlugin</type>
+  <resources>
+    <resource>workflowplugin.WorkflowController</resource>
+  </resources>
+  <repositories />
+  <dependencies />
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>

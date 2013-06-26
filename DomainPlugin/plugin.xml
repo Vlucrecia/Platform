@@ -1,0 +1,17 @@
+<plugin name='domain-plugin' version='0.1' grailsVersion='2.2 &gt; *'>
+  <author>Your name</author>
+  <title>Domain Plugin Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/domain-plugin</documentation>
+  <type>DomainPluginGrailsPlugin</type>
+  <resources>
+    <resource>domainplugin.OrgController</resource>
+    <resource>domainplugin.DomainService</resource>
+  </resources>
+  <repositories />
+  <dependencies />
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>

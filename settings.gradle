@@ -1,0 +1,2 @@
+include ':SolrSearchPlugin',':WorkflowPlugin',':DomainPlugin'
+
