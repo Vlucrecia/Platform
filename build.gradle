@@ -20,7 +20,7 @@ subprojects {
 
 
 
-project(':WorkflowPlugin').dependsOn(':DomainPlugin'){
+project(':WorkflowPlugin'){
     dependencies {
        compile project(':DomainPlugin')
     }
