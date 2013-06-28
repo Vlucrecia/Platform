@@ -4,7 +4,7 @@ apply plugin: 'maven'
 apply plugin: 'base'
 
 
-}
+} 
 configurations{
 pom
 }
